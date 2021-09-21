@@ -31,17 +31,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/custom-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/build/testbuild.loader.js",
+              "src/assets/build/testbuild.framework.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -99,9 +103,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/custom-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/build/testbuild.loader.js",
+              "src/assets/build/testbuild.framework.js"
+            ]
           }
         }
       }

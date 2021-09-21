@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { LocaldataService } from './services/localdata.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
+  constructor(public ldata: LocaldataService) {}
+
+  title = 'MyPortfolio';
+
+  @HostListener('window:beforeunload', ['$event']) beforeUnloadHandler(event: Event) {
+    this.ldata.updatelocalstorage();
+  }
+  
+  
+  ngOnInit() {
+  
+    const settings = JSON.parse(localStorage.getItem('portfolio_settings')!);
+    const pp = {name: 'someone', color: 0};
+    if (settings === null) {
+      return;
+    }
+  
+    // pp.name = this.ldata.current_user = settings.current_user;
+    pp.color = this.ldata.selected_color = settings.selected_color;
+  }
 }
