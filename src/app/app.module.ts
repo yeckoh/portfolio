@@ -9,11 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { MymatModule } from './mymat/mymat.module';
 import { LocaldataService } from './services/localdata.service';
 import { WebglComponent } from './webgl/webgl.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WebglComponent
+    WebglComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

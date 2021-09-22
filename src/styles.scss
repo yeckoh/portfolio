@@ -81,6 +81,69 @@ body { background-color: #181818; margin: 0; font-family: Roboto, "Helvetica Neu
   }
 
 
+  // progression CSS
+
+.outterWraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardSpacing {
+  max-width: 20rem;
+  padding: .5rem;
+}
+
+.personaCard {
+  min-width: 20rem;
+  max-width: 20rem;
+  padding: .5rem;
+}
+
+.progressionCard {
+  min-width: 20rem;
+  width: 36rem;
+  max-width: 40rem;
+  padding: .5rem;
+}
+
+
+.header {
+  padding: 1rem;
+}
+
+.content {
+  background-color: #222222;
+  padding: 0.5rem;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.nameColor {
+  background-color:rgb(124, 62, 62);
+}
+.genderColor {
+  background-color:rgb(66, 122, 61);
+}
+.descriptionColor {
+  background-color:rgb(71, 5, 0);
+}
+.personalityColor {
+  background-color:rgb(62, 103, 124);
+}
+.idealsColor {
+  background-color:rgb(89, 61, 122);
+}
+.bondsColor {
+  background-color:rgb(122, 122, 61);
+}
+.raceColor {
+  background-color:rgb(50, 122, 61);
+}
+.backgroundColor {
+  background-color:rgb(122, 50, 61);
+}
+
+
 .mat-select-panel {
     max-height: 24rem !important;
   }
