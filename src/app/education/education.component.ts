@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProgramLanguage } from '../class_n_model/program-language';
 import { LocaldataService } from '../services/localdata.service';
 
 @Component({
@@ -15,9 +16,6 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
-
 
 
 

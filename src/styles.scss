@@ -114,32 +114,31 @@ body { background-color: #181818; margin: 0; font-family: Roboto, "Helvetica Neu
 .content {
   background-color: #222222;
   padding: 0.5rem;
+  // padding-top: 0.5rem;
+  // padding-bottom: 0.5rem;
   font-size: 16px;
   white-space: pre-wrap;
 }
 
-.nameColor {
-  background-color:rgb(124, 62, 62);
-}
-.genderColor {
+.green2Color {
   background-color:rgb(66, 122, 61);
 }
-.descriptionColor {
+.darkRedColor {
   background-color:rgb(71, 5, 0);
 }
-.personalityColor {
+.blueColor {
   background-color:rgb(62, 103, 124);
 }
-.idealsColor {
+.purpleColor {
   background-color:rgb(89, 61, 122);
 }
 .bondsColor {
   background-color:rgb(122, 122, 61);
 }
-.raceColor {
+.greenColor {
   background-color:rgb(50, 122, 61);
 }
-.backgroundColor {
+.redColor {
   background-color:rgb(122, 50, 61);
 }
 

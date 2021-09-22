@@ -4,6 +4,7 @@ import { WsService } from '../services/ws.service';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 // import { Readable, Stream } from 'stream'; // fileio
 import { HttpClient } from '@angular/common/http';
+import { ProgramLanguage } from '../class_n_model/program-language';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,6 @@ export class LocaldataService implements OnDestroy, OnInit {
     // private ws: WsService, 
   }
   ngOnInit(): void {
-
   }
 
   ngOnDestroy(): void {
@@ -118,7 +118,7 @@ export class LocaldataService implements OnDestroy, OnInit {
       description: "C++ with an emphasis on the STL, magic numbers, lambdas, and professional conventions" },
     { name: "Programming Language Concepts",
       code: "CPSC 360",
-      description: "Introduction to concepts such as Functional programming, function storage in the stack and heap. Projects written in C#, C++, COBOL, Haskell, PHP, and Python among others" },
+      description: "Introduction to concepts such as Functional programming, function storage in the stack and heap. Projects written in C#, C++, COBOL, Haskell, Prolog, PHP, and Python among others" },
     { name: "Operation Systems I",
       code: "CPSC 410",
       description: "Pages, scheduling, lambdas, multithreading with mutexes and semaphores in C++" },
@@ -140,8 +140,10 @@ export class LocaldataService implements OnDestroy, OnInit {
       // { name: "Introduction",
       // code: "CPSC 425",
       // description: "stuffgoeshere" },
-  ]
-  };
+  ]};
+
+  // sortByName called in constructor
+  progLangs: ProgramLanguage = new ProgramLanguage();
 
   //  endof.educationComponentData
   /// =======================================================
